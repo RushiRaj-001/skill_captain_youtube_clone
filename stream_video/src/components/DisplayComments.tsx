@@ -2,9 +2,10 @@ import React from 'react';
 import Comment from './Comment';
 
 const commentsList = [
-  { name: 'John Doe', comment: 'Great work on the project!' },
-  { name: 'Jane Smith', comment: 'I love the design and layout.' },
-  { name: 'Bob Johnson', comment: 'Nice use of colors.' },
+  { name: 'Rushikesh', comment: 'Great work and Enjoy the lesson' },
+  { name: 'Pratik', comment: 'Great work on the project!' },
+  { name: 'Vedant', comment: 'I love the design and layout.' },
+  { name: 'Tushar', comment: 'Nice use of colors.' },
 ];
 
 export default function DisplayComments() {
