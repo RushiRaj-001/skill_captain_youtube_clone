@@ -1,17 +1,31 @@
 "use client"
 
-import MediaPlayer from '@/components/MediaPlayer'
-import Button from '@/app/Button'
+// pages/index.js
+import React from 'react';
+import MediaPlayer from '@/components/MediaPlayer';
+import Suggestion from '@/components/Suggestion';
+import DisplayComments from '@/components/DisplayComments';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-        <h2 className='text-center' style={{fontSize:'50px'}}>Welcome to my page</h2>
-
-        <Button/>
-        <MediaPlayer/>
-      </div>
-    </main>
-  )
+    <div className="flex min-h-screen flex-col p-1">
+      <header className="p-4 text-center bg-gray-800">
+        <h1 className="text-4xl font-bold">Stream Video</h1>
+      </header>
+      <main className="grid md:grid-cols-3 grid-cols-1 gap-4 p-20 flex-grow">
+          <div className="border-solid col-span-2 border-2 border-pink flex flex-grow">
+            <MediaPlayer />
+          </div>
+          <div className="border-solid border-2 border-pink flex flex-grow">
+            <Suggestion />
+          </div>
+          <div>
+          <DisplayComments />
+          </div>
+      </main>
+      <footer className="p-4 text-center bg-gray-800">
+        <p className="text-sm">© 2024 Youtube Clone</p>
+      </footer>
+    </div>
+  );
 }
